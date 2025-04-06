@@ -1,0 +1,212 @@
+html, body {
+    height: 100%; /* Permettre à la page de prendre toute la hauteur de l'écran */
+    margin: 0;    /* Supprimer les marges*/
+    padding: 0;   /* Supprimer les espaces internes */
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+main{
+    flex: 1; /* Pour que main prend toute l'espace disponible afin que Footer soit en bas de la page*/
+}
+
+/* === Les Ecritures dans les ul === */
+ul li a {
+    text-decoration: none; /* Supprim le soulignement des liens */
+    font-weight: bold; /* Pour rendre plus Gros Les ecritureres */
+    color: white ; /* Couleur Des Ecritures */
+    background-color: rgba(0, 0, 0, 0.7); /* Fond */
+    padding: 10px 15px; /* Ajouter de l'espace à en haut et a gauche */
+    border-radius: 10px; /* Pour Arrondir les coins */
+    transition: background 0.40s; /*Durer de la couleur qui change lorsqu'on passe la souris*/
+}
+
+/* === Effet Lorsqu'on Passe la sOURIS === */
+ul li a:hover {
+    background-color: #8cff00; /* Fond Jaune Quand Y a un Curseur */
+    color: #333; /* Couleur Quand Y a un Curseur*/
+}
+/* ===HEADER & Footer=== */
+.ul_Header{
+    display: flex; /* Pour Aligner */
+    justify-content: center; /* Centrer horizontalement */
+    flex-wrap: wrap; /* Revenir a la ligne Quand L'ecran est Petit */
+    gap: 25px; /* Espacement */
+    list-style: none; /* Elever Les Points Dans Les Li */
+    padding: 7px; /* definir les Espaces */
+}
+.ul_Footer{
+    display: flex; /* Pour Aligner */
+    justify-content: center; /* Centrer horizontalement */
+    flex-wrap: wrap; /* Revenir a la ligne Quand L'ecran est Petit */
+    gap: 50px; /* Espacement */
+    list-style: none; /* Elever Les Points Dans Les Li */
+    padding: 1px; /* definir les Espaces */
+}
+
+
+
+/* === Body Page D'acceuil === */
+.Body_Acceuil {
+    background: url(Fond\ 1.jpg);
+    background-size: cover; /* Couvrir toute La Page */
+    background-position: center; /* Pour que l'image soit au centre*/
+    font-weight: 900; /* Rendre plus Gras les ecritures */
+    margin: 0; /* Supprimer les marges*/
+    padding: 0; /* Supprime les espaces */
+}
+
+
+/* === principal (BIENVENUE SUR MA MON PORTFOLIO) === */
+.INTERFACE {
+    color: #000a66; /* COULEUR */
+    text-align: center; /* Centrer horizontalement */
+    font-size: 5vw; /* Taille du texte s'agrandit en foction de l'ecran */
+    background-color: rgba(155, 163, 155, 0.5);
+    padding: 25px; /* Ajouter un espace autour du texte */
+    border-radius: 15px; /* Arrondir les coins */
+    font-weight: 900;
+}
+
+ 
+/* ======= FOOTER =======*/
+footer {
+    
+    background-color: #333;
+    color: white;
+    padding: 1px;
+    gap: 20px; /* Espace entre les LOGO */
+    text-align: center;
+}
+
+.ul_Footer {
+    gap: 100px;
+    margin: 10px;
+
+}
+.ul_Footer li a {
+    padding: 2px;
+    background-color: rgba(0, 0, 0, 0.2);
+    font-size: larger;
+
+}
+
+
+/* LOGO DES RESEAUX */
+.Logo {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    margin: 0.2px;
+}
+
+/* PAGE: A PROPO */
+.Body_A_Propo {
+    background-color: white(214, 208, 208);
+}
+
+.Main_De_A_Propo {
+    font-size: x-large; 
+    padding: 15px 100px;
+    max-width: 800px;
+    font-size: x-large;
+}
+
+#h1_De_A_Propo {
+    text-decoration: underline;
+    font-size: x-large;
+}
+
+main input {
+    border-radius: 15px;
+    padding: 10px 30px;
+    font-size: xxx-small;
+    font-weight: 700;
+}
+
+#Logo_Des_Language {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: 3px;
+    
+}
+
+.Logo_Language img {
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+h3 {
+    text-align: center;
+    text-decoration: underline;
+    display: flex;
+    font-weight: 900;
+    padding: 0 15px;
+    
+
+}
+
+ /* PAGE : PROJET */
+ .flou { /* Pour rendre flout l'arrière plan de la page PROJET */
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-image: url(Fond_2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: blur(4px);
+    z-index: -1;
+}
+
+#h3_Projet { /* L'en tète de la Page PROJET */
+    color: rgb(45, 38, 38);
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border-radius: 20px;
+    margin: 50px;
+    padding: 30px;
+}
+
+ .Case_Des_Projets {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin: 50px;
+}
+
+.Case_Individuel {
+    font-weight: 600;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    padding: 20px 10px;
+    height: 200px;
+    background-color: white;
+    width: 300px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+
+
+
+ /* PAGE: RESEAUX SOCIAUX */
+.ul_Reseau {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+
+.ul_Reseau li a {
+    background-color: black;
+    border-radius: 60px;
+}
