@@ -413,3 +413,69 @@ h3 {
 }
 
 
+/* Tous tes styles CSS existants ici */
+
+/* === Media Query pour les petits écrans === */
+@media screen and (max-width: 768px) {
+    /* Tous les styles pour les petits écrans (mobile/tablettes) */
+    body, html {
+        font-size: 16px; /* Taille de police plus petite pour mobile */
+    }
+
+    /* Ajustements pour le header */
+    .ul_Header {
+        flex-direction: column; /* Empiler les éléments du menu */
+        align-items: center;
+        gap: 10px; /* Espacement réduit */
+    }
+
+    /* Ajustements des liens du menu */
+    .ul_Header li a {
+        font-size: 18px; /* Plus petit sur mobile */
+        padding: 8px 12px; /* Moins de padding */
+    }
+
+    /* Redimensionnement des images */
+    img {
+        width: 100%;
+        max-width: 300px; /* Limiter la largeur max des images */
+        height: auto; /* Garder l'aspect ratio */
+    }
+
+    /* Ajuster le footer */
+    footer {
+        text-align: center;
+        padding: 20px 10px;
+    }
+
+    .ul_Footer {
+        flex-direction: column; /* Empiler les éléments du footer */
+        gap: 15px; /* Espacement réduit */
+    }
+
+    .Droits {
+        text-align: center;
+        margin: 0;
+        font-size: 12px; /* Police plus petite */
+    }
+
+    /* Ajuster la mise en page des projets */
+    .Case_Des_Projets {
+        flex-direction: column; /* Empiler les projets sur mobile */
+        gap: 30px;
+    }
+
+    .Case_Individuel {
+        width: 90%; /* Réduire la taille des projets */
+        margin: 0 auto; /* Centrer les cartes de projet */
+    }
+}
+
+
+
+
+
+
+
+
+
