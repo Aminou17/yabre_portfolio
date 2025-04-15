@@ -1,3 +1,27 @@
+
+
+/* 1 SEUL FICHIER CSS  */
+
+/* Classer Par Ordre:  */
+
+/* === PAGE: ACCEUIL === */
+
+/* PAGE: A PROPO */
+
+/* PAGE: COMPETENCES */
+
+/* PAGE: PROJET */
+
+/* PAGE: CONTACT */
+
+/* PAGE: RESEAUX */
+
+
+
+
+
+
+
 html, body {
     height: 100%; /* Permettre à la page de prendre toute la hauteur de l'écran */
     margin: 0;    /* Supprimer les marges*/
@@ -10,7 +34,7 @@ html, body {
 
 
 main{
-    flex: 1; /* Pour que main prend toute l'espace disponible afin que Footer soit en bas de la page*/
+    flex: 1; /* Pour que Footer soit toujour en bas de la page*/
 }
 
 .Haut_De_Page {
@@ -20,11 +44,13 @@ main{
     border-radius: 5px;
     color: rgb(205, 199, 199);
     max-width: 250px;
-    font-size: larger;
+    font-size: large;
     text-align: left;
+    margin-bottom: 100px;
+    
 }
 
-/* === Les Ecritures dans les ul === */
+/* === Les ul === */
 li a {
     text-decoration: none; /* Supprim le soulignement des liens */
     font-weight: bold; /* Pour rendre plus Gros Les ecritureres */
@@ -40,6 +66,11 @@ li a:hover {
     background-color: #42de2d; /* Fond Jaune Quand Y a un Curseur */
     color: #1c1a1a; /* Couleur Quand Y a un Curseur*/
 }
+
+
+
+
+
 
 
 /* ===HEADER=== */
@@ -68,9 +99,11 @@ header {
     transition: background 0.3s;
 }
 
-hr {
-    width: 35%;
-}
+
+
+
+
+
 
 
 /* ==== FOOTER */
@@ -117,7 +150,7 @@ footer {
 
 /* === PAGE: ACCEUIL === */
 .Body_Acceuil {
-    background: url(Fond\ 1.jpg);
+    background: url(Fond_Acceuil.jpg);
     background-size: cover; /* Couvrir toute La Page */
     background-position: center; /* Pour que l'image soit au centre*/
     font-weight: 900; /* Rendre plus Gras les ecritures */
@@ -136,14 +169,12 @@ footer {
     font-weight: 900;
 }
 
-
 #Logo_Des_Language {
     display: flex;
     justify-content: center;
     gap: 50px;
     margin: 3px;
-    flex-wrap: wrap;
-    
+    flex-wrap: wrap; 
 }
 
 .Logo_Language img {
@@ -171,18 +202,19 @@ h3 {
 
 
 
+
 /* PAGE: A PROPO */
 
 .Fond_A_Propo {
     height: 100vh;
     width: 100%;
     position: fixed;  
-    background-image: url(Fond\ 1.jpg);
+    background-image: url(Fond_Acceuil.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     filter: blur(2px);
-    z-index: -1;
+    z-index: -1;   /* En Arrière Plan */
 }
 
 .Main_De_A_Propo {
@@ -192,8 +224,7 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 50px;
-    
+    margin-bottom: 50px;    
 }
 
 .Main_De_A_Propo img {
@@ -230,6 +261,7 @@ hr {
      height: 1px;
      width: 35vw;
 }
+
 #Nom {
     color: blue;
 }
@@ -249,8 +281,10 @@ hr {
 
 
 
+
 /* PAGE: COMPETENCES */
-#TITRE {
+
+#TITRE {    /* Mes Competences */ 
     text-decoration: underline;
     font-size: x-large;
     text-align: center;
@@ -261,41 +295,46 @@ hr {
 .Body_Competences {
     background-color: #1c1a1a2f;
 }
-.Competences {
-    width: 100%;
-    max-width: 500px;
+
+.Competences { 
+    width: 100%; /*  S'adapté a tous les ecran */
+    max-width: 500px; /* Quand l'ecran est trop large */
     margin: 70px auto;
     display: flex;
     flex-direction: column;
-    align-items: center;  
+    align-items: center; 
+    background-color: #82555544;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-radius: 10px;
 }
 
 .Tube_Vide {
     border: 2px solid;
     height: 35px;
-    max-width: 600px;
+    max-width: 600px; 
     border-radius: 10px;
     margin-bottom: 80px;
-    width: 90%;  
+    width: 90%;  /* 90% de la largeur de la largeur de l'ecran (Telephone et Ordinateur) */
 }
 
 .Progression_HTML {
     border: 1px solid;
-    height: 100%;
-    width: 90%;
+    height: 100%; /* Rempli la hauteur du Tube Vide */
+    width: 90%; /* 90% de la largeur du Tube Vide */
     border-radius: 10px;
     background-color: rgb(52, 52, 207);
 }
 
-.Progression_C {
+.Progression_C { /* La bar Language C */
     border: 1px solid;
     height: 100%;
-    width: 80%;
+    width: 80%;   /* 80% de la largeur du Tube Vide */
     border-radius: 10px;
     background-color: rgb(52, 52, 207);
 }
 
-.Progression_CC {
+.Progression_CC { /* La bar Language C++ */
     border: 1px solid;
     height: 100%;
     width: 15%;
@@ -303,7 +342,7 @@ hr {
     background-color: rgb(52, 52, 207);
 }
 
-.Progression_Python {
+.Progression_Python { /* La bar Language Python*/
         border: 1px solid;
         height: 100%;
         width: 10%;
@@ -348,7 +387,7 @@ hr {
     height: 100vh;
     width: 100%;
     position: fixed;  
-    background-image: url(Fond_2.jpg);
+    background-image: url(Fond_De_Projet.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -356,7 +395,7 @@ hr {
     z-index: -1;
 }
 
-#h3_Projet { /* L'en tète de la Page PROJET */
+#h3_Projet { /* Mes Projet */
     color: rgb(45, 38, 38);
     font-size: x-large;
     display: flex;
@@ -368,42 +407,43 @@ hr {
     max-width: 100%;
 }
 
- .Case_Des_Projets {
+ .Case_Des_Projets { /* Tous Les pages en global */
     display: flex;
     justify-content: center;
     text-align: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Revenir a la ligne pour les petis ecrans */
     gap: 100px;
     margin-top: 100px;
+    margin-bottom: 50px;
 }
 
-.Case_Individuel {
+.Case_Individuel { /* Les ecritures dans chacun des Case*/
     font-weight: 600;
     font-size: large;
     justify-content: center;
     padding: 20px 10px;
     height: 200px;
     background-color: rgb(232, 224, 224);
-    max-width: 100%;
+    width: 100%;
+    max-width: 400px;
     border-radius: 15px;
     text-align: center;
 }
 
-.Description_Projet {
+.Description_Projet { /* Dans chaque case, Les ecritures reviennent a la ligne */
     text-align: start;
 }
 
-.Executer_Programme {
+.Executer_Programme { /* li Forcé a devenir bouton d'execussion */
     padding: 2px;
     margin: 20px auto;
     list-style-type: none;
 }
 
-
-.Case_Individuel strong {
+.Case_Individuel strong { /* li Forcé a devenir bouton d'execussion */
     padding-top: 0px;
 }
-.Fond_flou {
+.Fond_flou { 
     height: 100vh;
     width: 100%;
     position: fixed;
@@ -413,19 +453,20 @@ hr {
     background-size: cover;
     background-position: center;
     filter: blur(4px);
-    z-index: -1;
+    z-index: -1; /* Arrièere Plan */
 }
 
-.Execution {
+.Execution { /* Bouton --Executer Maintenant-- */
     display: flex;
     justify-content: center;
-    width: 350px;
+    width: 100vw;
+    max-width: 350px;
     margin:  65px auto;
     background-color: #825555;
     font-size: x-large;
     text-align: center;
     border-radius: 7px;
-    padding: 10px 20px;
+    padding: 5 auto;
 }
 
 .Guide img{
@@ -452,7 +493,7 @@ hr {
     height: 100vh;
     width: 100%;
     position: fixed;
-    background-image: url(Fo.jpg);
+    background-image: url(Fond_De_Contact.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -596,7 +637,7 @@ button {
     height: 100vh;
     width: 100%;
     position: fixed;
-    background-image: url(Background_De_Reseaux.jpg);
+    background-image: url(Fond_De_Reseaux.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -608,6 +649,8 @@ button {
 
 
 
+
+/* TELEPHONE */
 @media (max-width: 600px) {
     body {
       font-size: 14px;
