@@ -82,7 +82,6 @@ footer {
     gap: 20px; /* Espace entre les LOGO */
     text-align: center;
     box-sizing: border-box;
-    
 }
 
 
@@ -209,7 +208,7 @@ h3 {
     border: 1px solid;
     border-radius: 15px;
     height: auto;
-    width: 70vw;
+    max-width: 100%;
     padding: 5px;
     background-color: hsla(0, 9%, 87%, 0.878);
     color: rgb(0, 0, 0);   
@@ -258,10 +257,11 @@ h3 {
 }
 .Competences {
     width: 100%;
-    margin: 70px;
+    max-width: 500px;
+    margin: 70px auto;
     display: flex;
     flex-direction: column;
-    align-items: center;    
+    align-items: center;  
 }
 
 .Tube_Vide {
