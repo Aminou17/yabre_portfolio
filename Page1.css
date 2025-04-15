@@ -536,44 +536,41 @@ button {
 
  /* PAGE: RESEAUX SOCIAUX */
 
-.Bloc_De_Reseaux {
+ .Bloc_De_Reseaux {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 100px;
-    list-style-type: none;
-    margin: 100px auto;
-    width: 100%;
-
+    gap: 8vh;
+    margin: 5vh auto;
+    width: 90%;
+    max-width: 600px;
 }
 
 .Bloc_De_Reseaux img {
-    height: auto;
-    width: 35px;
-    padding-right: 25px ;
-
-    
-}
+        width: clamp(25px, 6vw, 60px);
+        height: auto;
+        padding-right: 5vw;
+    }
 
 .Bloc_De_Reseaux strong {
-    font-size: 2rem;
+    font-size: clamp(1rem, 7vw, 3rem);
     color: black;
     background-color: rgba(255, 255, 255, 0.295);
-    padding: 3px 5px;
+    padding: 0 1px;
     border: 2px solid;
     border-color: #585564;
-    border-radius: 10px;
+    border-radius: 6px;
     
 }
 
 .Bloc_De_Reseaux a {
     display: flex;
     align-items: center;  /* Centrer Les Logo et leurs liens */
-    padding: 10px;
+    padding: 3px;
     background-color: #ffffffee; /* background de chaque Logo */
-    border: 6px solid transparent; /* Bordure transparente */
+    border: 5px solid transparent; /* Bordure transparente */
     border-color: rgb(52, 52, 55);
-    border-radius: 15px; 
+    border-radius: 12px; 
     box-shadow: 0 0 8px rgba(255, 255, 255, 0.7); /* Lumière autour de l'élément */
     transition: all 0.3s ease; /* Temps de effet Lumière */
     text-decoration: none;
