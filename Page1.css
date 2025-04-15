@@ -213,6 +213,9 @@ h3 {
     color: rgb(0, 0, 0);   
 }
 
+#Mon_Parcours {
+    text-align: left;
+}
 #h1_De_A_Propo {
     text-decoration: underline;
     font-size: x-large;
@@ -554,10 +557,10 @@ button {
 }
 
 .Bloc_De_Reseaux strong {
-    font-size: 45px;
+    font-size: 3rem;
     color: black;
     background-color: rgba(255, 255, 255, 0.295);
-    padding: 10px 30px;
+    padding: 3px 5px;
     border: 2px solid;
     border-color: #585564;
     border-radius: 10px;
