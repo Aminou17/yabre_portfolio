@@ -21,7 +21,7 @@ main{
     color: rgb(205, 199, 199);
     max-width: 250px;
     font-size: larger;
-
+    text-align: left;
 }
 
 /* === Les Ecritures dans les ul === */
@@ -83,6 +83,9 @@ footer {
     box-sizing: border-box;
 }
 
+.Design_By {
+    text-align: left;
+}
 
 .ul_Footer{
     display: flex; /* Pour Aligner */
@@ -91,6 +94,7 @@ footer {
     list-style: none; /* Elever Les Points Dans Les Li */
     padding: 1px; /* definir les Espaces */
     margin-top: 40px;
+    gap: 30px;
 }
 
 .Logo {
@@ -173,7 +177,7 @@ h3 {
     height: 100vh;
     width: 100%;
     position: fixed;  
-    background-image: url(Background_De_A_Propo.jpg);
+    background-image: url(Fond\ 1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -197,8 +201,8 @@ h3 {
     border-bottom-left-radius: 45px;
     margin-bottom: 65px;
     margin-top: 5px;
-    height: 250px;
-    width: 250px;
+    height: 150px;
+    width: 150px;
     object-fit: cover;
 }
 
@@ -209,23 +213,23 @@ h3 {
     height: auto;
     max-width: 100%;
     padding: 5px;
-    background-color: hsla(0, 9%, 87%, 0.878);
-    color: rgb(0, 0, 0);   
+    background-color: hsla(0, 9%, 87%, 0.647);
+    text-align: left;
+    max-width: 750px;  
 }
 
-#Mon_Parcours {
-    text-align: left;
-}
 #h1_De_A_Propo {
-    text-decoration: underline;
-    font-size: x-large;
+    font-size: xx-large;
     color: blue;
-    background-color: hsla(0, 9%, 87%, 0.878);
-    color: rgb(0, 0, 0);
     padding: 0 3px;
     border-radius: 7px;
 }
 
+hr {
+     background-color: blue;
+     height: 1px;
+     width: 35vw;
+}
 #Nom {
     color: blue;
 }
@@ -367,6 +371,7 @@ h3 {
  .Case_Des_Projets {
     display: flex;
     justify-content: center;
+    text-align: center;
     flex-wrap: wrap;
     gap: 100px;
     margin-top: 100px;
@@ -390,7 +395,7 @@ h3 {
 
 .Executer_Programme {
     padding: 2px;
-    margin: 20px 10px;
+    margin: 20px auto;
     list-style-type: none;
 }
 
@@ -458,13 +463,13 @@ h3 {
 .Titre_De_Contact {
     display: flex;
     justify-content: center;
-    font-size: 3vw;
+    font-size: 4vw;
     font-weight: 900;
     padding: 15px 15px;
     margin: 50px;
     border-radius: 7px;
     background-color: rgba(0, 0, 0, 0.515);
-    color: rgba(255, 255, 255, 0.727);
+    color: rgba(255, 255, 255, 0.953);
 }
 
 .Parent_Des_Input {
@@ -481,11 +486,10 @@ h3 {
     align-items: center;
 
     max-width: 500px;
-    margin: 25vh auto;
+    margin: 10vh auto;
     height: 75vh;
     border-radius: 15px;
     font-size: large;
-    color: rgb(6, 6, 6);
     padding: 20px;
     gap: 20px; /* espace entre les éléments */
 }
@@ -503,6 +507,13 @@ input {
     font-weight: bolder;
 }
 
+#input_Titre {
+    color: rgb(0, 0, 0);
+    background-color: #cdd6cbfd;
+    margin: 0 2px;
+    font-size: larger;
+    border-radius: 4px;
+}
 textarea {
     width: 80%;
     max-width: 600px;
@@ -511,9 +522,8 @@ textarea {
     border-radius: 8px;
     border: 1px solid #0d0303;
     resize: none; /* Empêche l'utilisateur de redimensionner */
-    margin-top: 40px;
-    margin-left: 20px;
     background-color: rgba(250, 235, 215, 0.485);
+
 }
 
 button {
